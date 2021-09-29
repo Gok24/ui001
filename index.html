@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://kit-pro.fontawesome.com/releases/v6.0.0-beta1/css/pro.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    body{
+      background: #d7d7d7;
+    }
+    body.nm{
+      background: #111;
+    }
+    .testlogo{
+      margin: 10px;
+    }
+    .test{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      margin: 20px 0px;
+      background: rgb(255,255,255);
+      border-radius: 5px;
+      box-shadow: -2px -1px 20px #80808051;
+    }
+    .test.nm{
+      background: rgb(30,30,30);
+      box-shadow: -2px -1px 20px rgb(0,0,0);
+    }
+    .testn p{
+      font-family: Varela Round;
+    }
+    .testn p.nm{
+      color: white;
+    }
+    .def p{
+      font-family: Varela Round;
+      font-size: 13px;
+      color: gray;
+    }
+    .details{
+      margin: 5px;
+      line-height: 10px;
+    }
+    .btndiv{
+      margin: 10px;
+    }
+    .btndiv .btn{
+      padding: 7px 20px;
+      border: none;
+      outline: none;
+      font-family: Varela Round;
+      font-size: ;
+      color: white;
+      background: linear-gradient(45deg,#2a7fff,#5b9dff);
+      border-radius: 20px;
+    }
+    .actions{
+      display: flex;
+      margin: 20px 0px;
+      background: linear-gradient(-45deg,#dfdfdf,white); 
+      padding: 10px;
+      color: #333;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      position: relative;
+    }
+    .actions.nm{
+      color: white;
+      background: linear-gradient(45deg,rgb(30,30,30),rgb(20,20,20));
+    }
+    .fa-sun-bright{
+      transition: 0.3s;
+    }
+    .fa-sun-bright.nm{
+      color: gray;
+      transform: rotate(40deg);
+    }
+    .fa-rotate-right.nm{
+      color: gray;
+    }
+    .fa-key{
+    }
+    hr{
+      border: 0.7px solid #a2a2a2;
+    }
+    hr.nm{
+      border: 0.7px solid rgb(30,30,30);
+    }
+    .svg1{
+      height: 49px;
+      width: 48px;
+    }
+    .svg1 .svg1bg1.nm{
+      fill: #272727;
+    }
+    .svg1bg2.nm{
+      fill: gray;
+    }
+    #inp{
+      outline: none;
+      border: 0px solid #333;
+      padding: 7px;
+      background: rgba(51,51,51,0.16);
+      border-radius: 5px;
+      font-family: Varela Round;
+    }
+    #inp.nm{
+      color: white;
+    }
+    </style>
+</head>
+<body class="body">
+  <div class="actions">
+  <i class="fa-solid fa-sun-bright"></i>
+<i onclick="window.location.reload()" class="fa-solid fa-rotate-right"></i>  
+<input placeholder="search..." onkeyup="search()" name="" id="inp" value="" />
+</div>
+<div class="tests">
+  <div class="test sr">
+    <div class="testlogo">
+  <svg 
+class="svg1" height="511pt" viewBox="-57 1 511 511.99996" width="511pt" xmlns="http://www.w3.org/2000/svg"><path class="svg1bg1" d="m.503906 512 397.054688-.003906v-408.886719l-103.109375-103.109375h-293.949219zm0 0" fill="#e6e6e6"/><path class="svg1bg2" d="m397.558594 103.109375h-103.109375v-103.109375" fill="#ccc"/><g fill="#6198ce"><path d="m249.964844 129.746094h-101.871094c-4.328125 0-7.835938-3.511719-7.835938-7.839844s3.507813-7.835938 7.835938-7.835938h101.871094c4.332031 0 7.839844 3.507813 7.839844 7.835938s-3.511719 7.839844-7.839844 7.839844zm0 0"/><path d="m336.667969 190.871094h-275.277344c-4.328125 0-7.835937-3.511719-7.835937-7.839844s3.507812-7.835938 7.835937-7.835938h275.277344c4.328125 0 7.835937 3.507813 7.835937 7.835938s-3.507812 7.839844-7.835937 7.839844zm0 0"/><path d="m336.667969 251.246094h-275.277344c-4.328125 0-7.835937-3.507813-7.835937-7.835938s3.507812-7.835937 7.835937-7.835937h275.277344c4.328125 0 7.835937 3.507812 7.835937 7.835937s-3.507812 7.835938-7.835937 7.835938zm0 0"/><path d="m336.667969 311.628906h-275.277344c-4.328125 0-7.835937-3.511718-7.835937-7.839844 0-4.328124 3.507812-7.835937 7.835937-7.835937h275.277344c4.328125 0 7.835937 3.507813 7.835937 7.835937 0 4.328126-3.507812 7.839844-7.835937 7.839844zm0 0"/></g><path d="m352.195312 420.070312-69.882812-52.902343c-2.578125-1.949219-6.089844-2.121094-8.84375-.421875-2.75 1.695312-4.179688 4.90625-3.59375 8.085937l15.851562 86.203125c.695313 3.78125 3.988282 6.421875 7.699219 6.421875.46875 0 .945313-.042969 1.425781-.128906 4.257813-.785156 7.070313-4.871094 6.289063-9.125l-4.195313-22.820313 27.289063-16.820312 18.5 14.003906c3.449219 2.613282 8.367187 1.933594 10.976563-1.515625 2.613281-3.453125 1.933593-8.367187-1.515626-10.980469zm-58.292968-1.222656-4.964844-27.003906 21.890625 16.570312zm0 0" fill="#e83842"/><path d="m301.859375 337.476562c-41.769531 0-75.753906 33.984376-75.753906 75.753907 0 41.773437 33.984375 75.753906 75.753906 75.753906 41.773437 0 75.753906-33.980469 75.753906-75.753906 0-41.769531-33.984375-75.753907-75.753906-75.753907zm0 135.835938c-33.128906 0-60.082031-26.953125-60.082031-60.082031 0-33.128907 26.953125-60.082031 60.082031-60.082031s60.082031 26.953124 60.082031 60.082031c0 33.128906-26.953125 60.082031-60.082031 60.082031zm0 0" fill="#e83842"/></svg>   
+</div>
+    <div class="details">
+    <div class="testn">
+      <p class="t1">AIATS-01</p>
+    </div>
+    <div class="def">
+      <p class="t2">All India Aakash Test Series</p>
+    </div>
+    </div>
+    <div class="btndiv">
+      <button onclick="alert('not uploaded yet')" class="btn">
+        <span>
+          key
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="test2 sr">
+  </div>
+  <div class="hrdiv">
+  <hr class="hr"/>
+</div>
+
+</div>
+  <script>
+  var inp = document.getElementById("inp")
+    var nmbtn = document.querySelector(".fa-sun-bright")
+    var bg = document.querySelector(".body")
+    var div = document.querySelector(".test")
+    var divtxt1 = document.querySelector(".t1")
+    var divtxt2 = document.querySelector(".t2")
+    var reloadbtn = document.querySelector(".fa-rotate-right")
+    var sb1 = document.querySelector(".svg1bg1")
+    var sb2 = document.querySelector(".svg1bg2")
+    var hr = document.querySelector(".hr")
+    nmbtn.onclick = function(){
+     bg.classList.toggle("nm")
+     div.classList.toggle("nm")
+     divtxt1.classList.toggle("nm")
+     nmbtn.classList.toggle("nm")
+     document.querySelector(".actions").classList.toggle("nm")
+     hr.classList.toggle("nm")
+     sb1.classList.toggle("nm")
+     sb2.classList.toggle("nm")
+     reloadbtn.classList.toggle("nm")
+     inp.classList.toggle("nm")
+    }
+  </script>
+  <script>
+    function search(){
+      let inp = document.getElementById("inp").value
+      inp = inp.toLowerCase();
+      let x = document.getElementsByClassName('sr')
+      for (i = 0; i < x.length; i++) {  
+
+        if (!x[i].innerHTML.toLowerCase().includes(inp)) { 
+
+            x[i].style.display="none"; 
+
+        } 
+
+        else { 
+
+            x[i].style.display="flex";                  
+
+        } 
+
+    } 
+    }
+  </script>
+</body>
+</html>
